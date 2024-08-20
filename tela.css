@@ -1,5 +1,5 @@
 * {
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,7 @@ body {
 }
 
 .logo {
+    font-family: "DM Serif Text", serif;
     font-size: 32px;
     color: white;
     text-decoration: none;
@@ -47,7 +48,7 @@ body {
     content: '';
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 1px;
     background: white;
 }
@@ -69,28 +70,55 @@ body {
     text-align: center;
 }
 
+.wrapper h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
 .balanco-mais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     border-color: white;
     border-width: 2px;
     font-size: 20px;
-    color: white;
-    background-color: green;
+    color: black;
+    background-color: #98FF87;
     padding: 20px;
     margin: 10px 0;
 }
 
+.balanco-mais p1 {
+    font-weight: 700;
+}
+
+.balanco-mais p2 {
+    font-style: italic;
+}
+
 .balanco-menos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     border-color: white;
     border-width: 2px;
     font-size: 20px;
-    color: white;
-    background-color: darkred;
+    color: black;
+    background-color: #FF9A7A;
     padding: 20px;
     margin: 10px 0;
+}
+
+.balanco-menos p1 {
+    font-weight: 700;
+}
+
+.balanco-menos p2 {
+    font-style: italic;
 }
