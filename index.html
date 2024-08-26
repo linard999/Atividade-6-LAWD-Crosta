@@ -5,46 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniporto</title>
-    <link rel="stylesheet" href="tela.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
+        rel="stylesheet" />
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Uniporto</a>
-
+        <div id="logo">
+            <span class="material-symbols-outlined" style="font-size:40px; margin: auto 0;color: white;">
+                distance
+            </span>
+            <a href="#" class="uniporto">Uniporto</a>
+        </div>
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#">Perfil</a>
             <a href="#">Ajuda</a>
         </nav>
     </header>
-    
-    <div class="wrapper">
-        <form action="">
-            <h1>Saldo Atual: R$ 50,00</h1>
-            <h2>Histórico de Transações:</h2>
-            <div class="balanco-mais">
-                <p1>+ R$ 8,00</p1>
-                <p2>20/08/2024</p2>
-            </div>
-            <div class="balanco-mais">
-                <p1>+ R$ 16,00</p1>
-                <p2>20/08/2024</p2>
-            </div>
-            <div class="balanco-mais">
-                <p1>+ R$ 21,00</p1>
-                <p2>20/08/2024</p2>
-            </div>
-            <div class="balanco-menos">
-                <p1>- R$ 3,00</p1>
-                <p2>20/08/2024</p2>
-            </div>
-        </form>
+
+    <div id="help" onclick="openModal()">
+        <span class="material-symbols-outlined button" style="font-size:48px; color: #00072D;">contact_support</span>
     </div>
+
+    <div class="modal-background">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <div>
+                        <span class="material-symbols-outlined"
+                            style="font-size:32px; color: #00072D;">contact_support</span>
+                    </div>
+                    <h4>Faça uma pergunta</h4>
+                </div>
+                <span onclick="closeModel()" class="material-symbols-outlined button" id="close">
+                    close
+                </span>
+            </div>
+            <textarea id="reportinflow" name="report inflow" cols="40" rows="1" class="modal-text"
+                placeholder="Pergunte a Uniport"></textarea>
+            <div class="modal-questions-area">
+                <h3>Ou use uma pergunta sugerida:</h3>
+                <div class="modal-questions button">
+                    <p>Por que não meu saldo não atualiza?</p>
+                </div>
+                <div class="modal-questions button">
+                    <p>Como faça um novo depósito no site?</p>
+                </div>
+                <div class="modal-questions button">
+                    <p>Qual o telefone de contato?</p>
+                </div>
+                <div class="modal-questions button">
+                    <p>Como faço para pular a catraca?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h1>Saldo Atual: <span> R$ 50,00</span></h1>
+        <h2>Histórico de Transações:</h2>
+        <div class="cash inflow">
+            <p1>+ R$ 8,00</p1>
+            <p2>25/08/2024</p2>
+        </div>
+        <div class="cash inflow">
+            <p1>+ R$ 16,00</p1>
+            <p2>22/08/2024</p2>
+        </div>
+        <div class="cash outflow">
+            <p1>- R$ 5,00</p1>
+            <p2>21/08/2024</p2>
+        </div>
+        <div class="cash inflow">
+            <p1>+ R$ 21,00</p1>
+            <p2>20/08/2024</p2>
+        </div>
+        <div class="cash outflow">
+            <p1>- R$ 3,00</p1>
+            <p2>10/08/2024</p2>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js" async defer></script>
 </body>
 
 </html>

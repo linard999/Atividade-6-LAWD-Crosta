@@ -1,0 +1,230 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgray;
+
+}
+
+#help {
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 5rem;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    z-index: 1;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(4rem);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#close {
+    font-size: 40px;
+    margin: auto 0;
+    font-weight: 600;
+}
+
+.button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.modal {
+    background: #fff;
+    color: #00072D;
+    border-radius: 2.8rem;
+    padding: 3rem;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 3.4rem;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+.modal-questions {
+    border-radius: 1.6rem;
+    background-color: #DDE2FF;
+    padding: 1.5rem;
+    margin: 0.6rem 0;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.modal-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-radius: 1.6rem;
+    padding: 1rem 1.2rem;
+    margin: 1rem;
+    font-weight: 500;
+
+}
+
+.modal-questions-area {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-block-start: 1rem;
+
+}
+
+.modal-questions-area h3 {
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+
+}
+
+.header {
+    display: flex;
+    max-width: 80rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin: 2rem;
+    border-radius: 2.8rem;
+    width: 60%;
+    background: #00072D;
+    padding: 2rem 4rem;
+    z-index: 10;
+}
+
+#logo,
+.uniporto {
+    font-family: "DM Serif Text", serif;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 80;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 5rem;
+}
+
+.navbar a::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background: white;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.wrapper {
+    width: 63rem;
+    background: #00072D;
+    color: white;
+    border-radius: 3rem;
+    padding: 3rem;
+    max-width: 70rem;
+}
+
+.wrapper h1 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.wrapper h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+    font-size: 2.8rem;
+    color: black;
+    /* background-color: #98FF87; */
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.cash p1 {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+
+.cash p2 {
+    font-size: 1.5rem;
+    /* font-style: italic; */
+    font-weight: 700;
+}
+
+.inflow {
+    background-color: #98FF87;
+}
+
+
+.outflow {
+    background-color: #FF9A7A;
+}
